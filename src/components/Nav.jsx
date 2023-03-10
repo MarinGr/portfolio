@@ -6,7 +6,7 @@ export default function Nav() {
     <Container>
       <NavItem>
         <Link smooth to="about">
-          About me
+          About
         </Link>
       </NavItem>
       <NavItem>
