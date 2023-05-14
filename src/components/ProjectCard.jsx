@@ -51,6 +51,9 @@ const ProjectImg = styled.img`
 
 const ProjectTextContent = styled.div`
   padding: 0 30px 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 `;
 
 const ProjectTitle = styled.h3`
@@ -64,6 +67,7 @@ const ProjectDesc = styled.p`
 
 const ProjectLinksContainer = styled.div`
   display: flex;
+  margin-top: auto;
   justify-content: space-between;
   align-items: center;
   gap: 40px;
