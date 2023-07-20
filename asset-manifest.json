@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.0848fe57.css",
-    "main.js": "/portfolio/static/js/main.ad72aa0a.js",
+    "main.js": "/portfolio/static/js/main.f2cc987e.js",
     "static/media/food-shop.png": "/portfolio/static/media/food-shop.dc599a8716f21e27ca05.png",
     "static/media/cryptocurrency-app.png": "/portfolio/static/media/cryptocurrency-app.c0987cf6f30fd7dacf10.png",
     "static/media/todo-list.png": "/portfolio/static/media/todo-list.995aa920d567347f921a.png",
@@ -18,10 +18,10 @@
     "static/media/js.png": "/portfolio/static/media/js.b7d037e37c92fd9bbb8d.png",
     "index.html": "/portfolio/index.html",
     "main.0848fe57.css.map": "/portfolio/static/css/main.0848fe57.css.map",
-    "main.ad72aa0a.js.map": "/portfolio/static/js/main.ad72aa0a.js.map"
+    "main.f2cc987e.js.map": "/portfolio/static/js/main.f2cc987e.js.map"
   },
   "entrypoints": [
     "static/css/main.0848fe57.css",
-    "static/js/main.ad72aa0a.js"
+    "static/js/main.f2cc987e.js"
   ]
 }
