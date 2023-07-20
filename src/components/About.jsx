@@ -27,11 +27,9 @@ marina.grishn@gmail.com"
             <LinkDesc>marina.grishn@gmail.com</LinkDesc>
           </Link>
         </LinksContainer>
-        <Btn>
-          <ScrollLink smooth to="projects">
-            View my work
-          </ScrollLink>
-        </Btn>
+        <ScrollLink smooth to="projects">
+          <Btn>View my work</Btn>
+        </ScrollLink>
       </TextContent>
     </Container>
   );
