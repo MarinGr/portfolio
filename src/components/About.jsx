@@ -11,8 +11,8 @@ export default function About() {
         <Title>Hello, I'm Marina</Title>
         <Desc>
           A <HighlightText>Front-End Developer</HighlightText> passionate about
-          building web applications with Javascript/React. I enjoy bringing
-          ideas to life in the browser.
+          building web applications with React and Vue.
+          <br />I enjoy bringing ideas to life in the browser.
         </Desc>
         <LinksContainer>
           <Link href="https://github.com/MarinGr" target="_blank">
