@@ -6,7 +6,8 @@ import currencyConverterImg from "../images/projectsImages/currency-converter.pn
 import savingsGoalsImg from "../images/projectsImages/savings-goals.png";
 import qrCodeGeneratorImg from "../images/projectsImages/qr-code-generator.png";
 import cryptocurrencyAppImg from "../images/projectsImages/cryptocurrency-app.png";
-import todoList from "../images/projectsImages/todo-list.png";
+import todoListImg from "../images/projectsImages/todo-list.png";
+import budgetAppImg from "../images/projectsImages/budget-app.png";
 
 export const projectsData = [
   {
@@ -17,6 +18,7 @@ export const projectsData = [
     github: "https://github.com/MarinGr/shop-react",
     liveDemo: "https://maringr.github.io/shop-react/",
   },
+
   {
     id: uuidv4(),
     img: savingsGoalsImg,
@@ -24,6 +26,14 @@ export const projectsData = [
     desc: "React app that lets user create savings goals and keep track of their progress.",
     github: "https://github.com/MarinGr/savings-goals",
     liveDemo: "https://maringr.github.io/savings-goals/",
+  },
+  {
+    id: uuidv4(),
+    img: budgetAppImg,
+    title: "Budget App",
+    desc: "A budget app developed with Vue that allows you to track your expenses and income.",
+    github: "https://github.com/MarinGr/budget-app-vue",
+    liveDemo: "https://maringr.github.io/budget-app-vue/",
   },
   {
     id: uuidv4(),
@@ -67,7 +77,7 @@ export const projectsData = [
   },
   {
     id: uuidv4(),
-    img: todoList,
+    img: todoListImg,
     title: "To do list",
     desc: "A simple to do list built with Javascript.",
     github: "https://github.com/MarinGr/todo-list",

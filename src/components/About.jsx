@@ -3,6 +3,7 @@ import { linkHoverStyles, CTABtn } from "../assets/styles";
 import { MdEmail } from "react-icons/md";
 import { AiFillGithub } from "react-icons/ai";
 import { Link as ScrollLink } from "react-scroll";
+import { FiArrowDown } from "react-icons/fi";
 
 export default function About() {
   return (
@@ -28,7 +29,9 @@ marina.grishn@gmail.com"
           </Link>
         </LinksContainer>
         <ScrollLink smooth to="projects">
-          <Btn>View my work</Btn>
+          <Btn>
+            View my work <ArrowDownIcon />
+          </Btn>
         </ScrollLink>
       </TextContent>
     </Container>
@@ -136,5 +139,12 @@ const GithubIcon = styled(AiFillGithub)``;
 const LinkDesc = styled.p``;
 
 const Btn = styled.button`
-  ${CTABtn}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  ${CTABtn};
+`;
+const ArrowDownIcon = styled(FiArrowDown)`
+  font-size: 20px;
 `;
