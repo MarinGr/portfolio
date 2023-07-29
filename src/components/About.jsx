@@ -9,11 +9,12 @@ export default function About() {
   return (
     <Container id="about">
       <TextContent>
-        <Title>Hello, I'm Marina</Title>
+        <Title>
+          Hello, I'm Marina,
+          <br /> Frontend Developer
+        </Title>
         <Desc>
-          A <HighlightText>Front-End Developer</HighlightText> passionate about
-          building web applications with React and Vue.
-          <br />I enjoy bringing ideas to life in the browser.
+          I am passionate about building web applications with React and Vue.
         </Desc>
         <LinksContainer>
           <Link href="https://github.com/MarinGr" target="_blank">
@@ -93,10 +94,6 @@ const Desc = styled.p`
     font-size: 16px;
     margin-bottom: 28px;
   }
-`;
-
-const HighlightText = styled.span`
-  color: var(--primary-color);
 `;
 
 const LinksContainer = styled.div`
