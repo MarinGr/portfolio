@@ -12,6 +12,10 @@ export default function ProjectCard({ project }) {
       <ProjectTextContent>
         <ProjectTitle>{project.title}</ProjectTitle>
         <ProjectDesc>{project.desc}</ProjectDesc>
+        <ProjectStack>
+          <StackTitle>Stack: </StackTitle>
+          {project.stack}
+        </ProjectStack>
         <ProjectLinksContainer>
           <ProjectLink href={project.github} target="_blank">
             <GithubIcon />
@@ -26,6 +30,7 @@ export default function ProjectCard({ project }) {
     </Container>
   );
 }
+
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -61,8 +66,17 @@ const ProjectTitle = styled.h3`
 `;
 
 const ProjectDesc = styled.p`
+  margin-bottom: 22px;
+  line-height: 140%;
+`;
+
+const ProjectStack = styled.div`
   margin-bottom: 32px;
   line-height: 140%;
+`;
+
+const StackTitle = styled.span`
+  font-weight: 600;
 `;
 
 const ProjectLinksContainer = styled.div`
