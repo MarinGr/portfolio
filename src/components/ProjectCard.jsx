@@ -55,7 +55,8 @@ const ProjectImg = styled.img`
 `;
 
 const ProjectTextContent = styled.div`
-  padding: 0 30px 20px;
+  /* padding: 0 30px 20px; */
+  padding: 0 30px 28px;
   display: flex;
   flex-direction: column;
   height: 100%;
