@@ -1,13 +1,13 @@
 import { v4 as uuidv4 } from "uuid";
 import foodShopImg from "../images/projectsImages/food-shop.png";
 import weatherAppImg from "../images/projectsImages/weather-app.png";
-import loanCalculatorImg from "../images/projectsImages/loan-calculator.png";
 import currencyConverterImg from "../images/projectsImages/currency-converter.png";
 import savingsGoalsImg from "../images/projectsImages/savings-goals.png";
 import qrCodeGeneratorImg from "../images/projectsImages/qr-code-generator.png";
 import cryptocurrencyAppImg from "../images/projectsImages/cryptocurrency-app.png";
 import todoListImg from "../images/projectsImages/todo-list.png";
 import budgetAppImg from "../images/projectsImages/budget-app.png";
+import loanCalculatorImg from "../images/projectsImages/loan-calculator.png";
 
 export const projectsData = [
   {
@@ -31,6 +31,15 @@ export const projectsData = [
   },
   {
     id: uuidv4(),
+    img: loanCalculatorImg,
+    title: "Loan calculator",
+    desc: "Loan calculator with real-time results update built with Vue and Vuex. Includes additional dependency vue-chart-3.",
+    stack: "Vue, Vuex",
+    github: "https://github.com/MarinGr/loan-calculator-vue",
+    liveDemo: "https://maringr.github.io/loan-calculator-vue/",
+  },
+  {
+    id: uuidv4(),
     img: budgetAppImg,
     title: "Budget App",
     desc: "Budget app that allows users to track their total balance based on expenses and income. Data is saved in localStorage.",
@@ -38,6 +47,7 @@ export const projectsData = [
     github: "https://github.com/MarinGr/budget-app-vue",
     liveDemo: "https://maringr.github.io/budget-app-vue/",
   },
+
   {
     id: uuidv4(),
     img: cryptocurrencyAppImg,
@@ -56,15 +66,7 @@ export const projectsData = [
     github: "https://github.com/MarinGr/weather-ts",
     liveDemo: "https://maringr.github.io/weather-ts/",
   },
-  {
-    id: uuidv4(),
-    img: loanCalculatorImg,
-    title: "Loan calculator",
-    desc: "Loan calculator built with Javascript. App allows users to get information about their total and monthly payments based on provided amount and terms of loan.",
-    stack: "HTML, CSS, Javascript",
-    github: "https://github.com/MarinGr/loan-calculator",
-    liveDemo: "https://maringr.github.io/loan-calculator/",
-  },
+
   {
     id: uuidv4(),
     img: currencyConverterImg,
