@@ -71,6 +71,7 @@ const ProjectDesc = styled.p`
 `;
 
 const ProjectStack = styled.div`
+  margin-top: auto;
   margin-bottom: 32px;
   line-height: 140%;
 `;
