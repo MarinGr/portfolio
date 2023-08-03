@@ -4,7 +4,6 @@ import weatherAppImg from "../images/projectsImages/weather-app.png";
 import currencyConverterImg from "../images/projectsImages/currency-converter.png";
 import savingsGoalsImg from "../images/projectsImages/savings-goals.png";
 import cryptocurrencyAppImg from "../images/projectsImages/cryptocurrency-app.png";
-import budgetAppImg from "../images/projectsImages/budget-app.png";
 import loanCalculatorImg from "../images/projectsImages/loan-calculator.png";
 
 export const projectsData = [
@@ -36,16 +35,6 @@ export const projectsData = [
     github: "https://github.com/MarinGr/loan-calculator-vue",
     liveDemo: "https://maringr.github.io/loan-calculator-vue/",
   },
-  {
-    id: uuidv4(),
-    img: budgetAppImg,
-    title: "Budget App",
-    desc: "Budget app that allows users to track their total balance based on expenses and income. Data is saved in localStorage.",
-    stack: "Vue, Javascript",
-    github: "https://github.com/MarinGr/budget-app-vue",
-    liveDemo: "https://maringr.github.io/budget-app-vue/",
-  },
-
   {
     id: uuidv4(),
     img: cryptocurrencyAppImg,

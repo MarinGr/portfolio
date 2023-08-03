@@ -14,7 +14,8 @@ export default function About() {
           <br /> Frontend Developer
         </Title>
         <Desc>
-          I am passionate about building web applications with React and Vue.
+          I am fascinated by the magic of transforming lines of code into
+          beautiful apps we use everyday.
         </Desc>
         <LinksContainer>
           <Link href="https://github.com/MarinGr" target="_blank">
@@ -47,7 +48,7 @@ const Container = styled.section`
 `;
 
 const TextContent = styled.div`
-  max-width: 50%;
+  max-width: 45%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
