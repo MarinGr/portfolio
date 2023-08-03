@@ -3,9 +3,7 @@ import foodShopImg from "../images/projectsImages/food-shop.png";
 import weatherAppImg from "../images/projectsImages/weather-app.png";
 import currencyConverterImg from "../images/projectsImages/currency-converter.png";
 import savingsGoalsImg from "../images/projectsImages/savings-goals.png";
-import qrCodeGeneratorImg from "../images/projectsImages/qr-code-generator.png";
 import cryptocurrencyAppImg from "../images/projectsImages/cryptocurrency-app.png";
-import todoListImg from "../images/projectsImages/todo-list.png";
 import budgetAppImg from "../images/projectsImages/budget-app.png";
 import loanCalculatorImg from "../images/projectsImages/loan-calculator.png";
 
@@ -75,23 +73,5 @@ export const projectsData = [
     stack: "HTML, CSS, Javascript, Exchange rates API",
     github: "https://github.com/MarinGr/currency-converter",
     liveDemo: "https://maringr.github.io/currency-converter/",
-  },
-  {
-    id: uuidv4(),
-    img: qrCodeGeneratorImg,
-    title: "QR code generator",
-    desc: "React app that allows user to transform URL or text into QR code.",
-    stack: "React, Javascript",
-    github: "https://github.com/MarinGr/qr-generator",
-    liveDemo: "https://maringr.github.io/qr-generator/",
-  },
-  {
-    id: uuidv4(),
-    img: todoListImg,
-    title: "To do list",
-    desc: "A simple to do list built with Javascript , saves data in local storage.",
-    stack: "HTML, CSS, Javascript",
-    github: "https://github.com/MarinGr/todo-list",
-    liveDemo: "https://maringr.github.io/todo-list/",
   },
 ];
