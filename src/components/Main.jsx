@@ -8,8 +8,9 @@ export default function Main() {
   return (
     <Container>
       <About />
-      <Projects />
       <Stack />
+      <Projects />
+      {/* <Stack /> */}
       <Contacts />
     </Container>
   );

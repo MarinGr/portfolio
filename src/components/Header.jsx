@@ -28,7 +28,7 @@ export default function Header() {
     <Container>
       <Logo>Marina Grishina</Logo>
       {width > 1024 && <Nav />}
-      {isShownMenu ? (
+      {isShownMenu && width < 1024 ? (
         <>
           <CloseMenuIcon onClick={hideBurgerMenu} />
           <Nav />

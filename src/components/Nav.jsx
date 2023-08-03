@@ -39,11 +39,7 @@ const Container = styled.ul`
     right: 0;
     padding: 40px;
     padding-left: 60px;
-    background: linear-gradient(
-      132.6deg,
-      rgba(37, 216, 211, 0.5) 23.3%,
-      rgba(71, 139, 214, 0.5) 84.7%
-    );
+    background: var(--bg-color-primary);
     color: var(--text-color-secondary);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
@@ -56,7 +52,7 @@ const NavItem = styled.li`
   transition: 0.3s ease-in-out;
 
   &:hover {
-    color: var(--white);
+    color: var(--primary-color);
   }
 
   &:active {
