@@ -1,12 +1,11 @@
 export const sectionTitleStyle = `
-  font-size: 42px;
+  font-size: 36px;
   font-weight: 700;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
   text-align: center;
 
   @media (max-width: 480px) {
     font-size: 32px;
-    margin-bottom: 40px;
   }
 `;
 

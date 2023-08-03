@@ -7,8 +7,8 @@ export default function Contacts() {
     <Container id="contacts">
       <Title>Contact me</Title>
       <Desc>
-        Interested in working together or have a question? Please send me a
-        message, I'll get back to you as soon as possible.
+        Interested in working together? Please send me a message, I'll get back
+        to you as soon as possible.
       </Desc>
       <EmailBtn
         href="mailto:
@@ -25,6 +25,11 @@ const Container = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+
+  @media (max-width: 990px) {
+    margin-bottom: 20px;
+  }
 `;
 
 const Title = styled.h2`
@@ -32,7 +37,7 @@ const Title = styled.h2`
 `;
 
 const Desc = styled.p`
-  max-width: 50%;
+  max-width: 40%;
   font-size: 18px;
   line-height: 160%;
   margin-bottom: 60px;

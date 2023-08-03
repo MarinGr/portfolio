@@ -10,7 +10,6 @@ export default function Main() {
       <About />
       <Stack />
       <Projects />
-      {/* <Stack /> */}
       <Contacts />
     </Container>
   );

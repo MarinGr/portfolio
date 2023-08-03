@@ -45,6 +45,11 @@ const Container = styled.section`
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin-top: 100px;
+
+  @media (max-width: 990px) {
+    margin-top: 40px;
+  }
 `;
 
 const TextContent = styled.div`

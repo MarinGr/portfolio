@@ -39,8 +39,8 @@ const Container = styled.ul`
     right: 0;
     padding: 40px;
     padding-left: 60px;
-    background: var(--bg-color-primary);
-    color: var(--text-color-secondary);
+    background: var(--burger-nav-bg-color);
+    color: var(--text-color-primary);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -50,12 +50,15 @@ const Container = styled.ul`
 const NavItem = styled.li`
   cursor: pointer;
   transition: 0.3s ease-in-out;
+  padding-bottom: 4px;
 
   &:hover {
     color: var(--primary-color);
+    box-shadow: 0 3px 0 var(--primary-color);
   }
 
   &:active {
-    color: var(--text-color-secondary);
+    color: var(--primary-color-active);
+    box-shadow: 0 3px 0 var(--primary-color-active);
   }
 `;
