@@ -68,7 +68,7 @@ const TextContent = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 60px;
+  font-size: 54px;
   background-color: var(--primary-color);
   background: var(--text-color-headline);
   -webkit-background-clip: text;
@@ -88,7 +88,7 @@ const Title = styled.h1`
 
 const Desc = styled.p`
   font-size: 22px;
-  line-height: 160%;
+  line-height: 150%;
   margin-bottom: 40px;
 
   @media (max-width: 768px) {
