@@ -123,7 +123,7 @@ const linkStyles = css`
   ${linkHoverStyles}
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   font-size: 18px;
 
   @media (max-width: 480px) {
