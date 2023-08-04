@@ -4,17 +4,16 @@
     rgb(255, 255, 255, 0.5) 0%,
     rgb(234, 236, 255, 0.5) 90%
   );
+  --text-color-headline: linear-gradient(
+    76.8deg,
+    rgb(121, 45, 129) 3.6%,
+    rgb(36, 31, 98) 90.4%
+  );
   --burger-nav-bg-color: radial-gradient(
     621px at 25.3% 13.8%,
     rgb(234, 236, 255, 0.5) 0%,
     rgb(255, 255, 255, 0.5) 90%
   );
-  --text-color-headline: linear-gradient(
-    69.9deg,
-    rgb(76, 79, 106) 3.2%,
-    rgb(118, 124, 163) 97.6%
-  );
-  --text-color-primary: #3a3c50;
   --white: #fff;
   --primary-color: #74226c;
   --primary-color-hover: #66145e;
