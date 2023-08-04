@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.0a59d333.css",
-    "main.js": "/portfolio/static/js/main.c36ae1b3.js",
+    "main.css": "/portfolio/static/css/main.64f67e56.css",
+    "main.js": "/portfolio/static/js/main.0abc7136.js",
     "static/media/food-shop.png": "/portfolio/static/media/food-shop.e8e7b0c173f16607517d.png",
     "static/media/loan-calculator.png": "/portfolio/static/media/loan-calculator.e16be459202024ddfb7c.png",
     "static/media/cryptocurrency-app.png": "/portfolio/static/media/cryptocurrency-app.c0987cf6f30fd7dacf10.png",
@@ -18,11 +18,11 @@
     "static/media/vuejs.png": "/portfolio/static/media/vuejs.50d6d91fec56bdedcf81.png",
     "static/media/js.png": "/portfolio/static/media/js.b7d037e37c92fd9bbb8d.png",
     "index.html": "/portfolio/index.html",
-    "main.0a59d333.css.map": "/portfolio/static/css/main.0a59d333.css.map",
-    "main.c36ae1b3.js.map": "/portfolio/static/js/main.c36ae1b3.js.map"
+    "main.64f67e56.css.map": "/portfolio/static/css/main.64f67e56.css.map",
+    "main.0abc7136.js.map": "/portfolio/static/js/main.0abc7136.js.map"
   },
   "entrypoints": [
-    "static/css/main.0a59d333.css",
-    "static/js/main.c36ae1b3.js"
+    "static/css/main.64f67e56.css",
+    "static/js/main.0abc7136.js"
   ]
 }
