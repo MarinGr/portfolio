@@ -50,6 +50,10 @@ const Container = styled.section`
   @media (max-width: 990px) {
     margin-top: 40px;
   }
+
+  @media (max-width: 480px) {
+    margin-top: 20px;
+  }
 `;
 
 const TextContent = styled.div`
