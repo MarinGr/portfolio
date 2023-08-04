@@ -135,9 +135,13 @@ const Link = styled.a`
   ${linkStyles}
 `;
 
-const EmailIcon = styled(MdEmail)``;
+const EmailIcon = styled(MdEmail)`
+  font-size: 20px;
+`;
 
-const GithubIcon = styled(AiFillGithub)``;
+const GithubIcon = styled(AiFillGithub)`
+  font-size: 20px;
+`;
 
 const LinkDesc = styled.p``;
 
