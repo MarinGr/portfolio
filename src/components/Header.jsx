@@ -42,6 +42,18 @@ export default function Header() {
   );
 }
 
+const Container = styled.header`
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+`;
+
+const Logo = styled.div``;
+
 const burgerMenuStyles = css`
   display: none;
 
@@ -59,15 +71,3 @@ const MenuIcon = styled(RxHamburgerMenu)`
 const CloseMenuIcon = styled(GrClose)`
   ${burgerMenuStyles}
 `;
-
-const Container = styled.header`
-  position: fixed;
-  z-index: 2;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 18px;
-  font-weight: 600;
-`;
-
-const Logo = styled.div``;

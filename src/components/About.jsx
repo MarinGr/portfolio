@@ -1,9 +1,10 @@
 import styled, { css } from "styled-components";
 import { linkHoverStyles, CTABtn } from "../assets/styles";
-import { MdEmail } from "react-icons/md";
-import { AiFillGithub } from "react-icons/ai";
 import { Link as ScrollLink } from "react-scroll";
 import { FiArrowDown } from "react-icons/fi";
+import { MdEmail } from "react-icons/md";
+import { AiFillGithub } from "react-icons/ai";
+import { FaTelegram } from "react-icons/fa";
 
 export default function About() {
   return (
@@ -28,6 +29,11 @@ marina.grishn@gmail.com"
           >
             <EmailIcon />
             <LinkDesc>marina.grishn@gmail.com</LinkDesc>
+          </Link>
+          {/* <a href="https://t.me/ana_zhuravleva" target="_blank"></a> */}
+          <Link href="https://t.me/marina_grishn" target="_blank">
+            <TelegramIcon />
+            <LinkDesc>@marina_grishn</LinkDesc>
           </Link>
         </LinksContainer>
         <ScrollLink smooth to="projects">
@@ -144,6 +150,10 @@ const EmailIcon = styled(MdEmail)`
 `;
 
 const GithubIcon = styled(AiFillGithub)`
+  font-size: 20px;
+`;
+
+const TelegramIcon = styled(FaTelegram)`
   font-size: 20px;
 `;
 
