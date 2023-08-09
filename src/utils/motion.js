@@ -1,4 +1,4 @@
-export const containerVariants = {
+export const containerVariant = {
   hidden: {
     opacity: 0,
   },
@@ -11,7 +11,7 @@ export const containerVariants = {
   },
 };
 
-export const titleVariants = {
+export const titleVariant = {
   hidden: {
     opacity: 0,
   },
@@ -20,7 +20,7 @@ export const titleVariants = {
   },
 };
 
-export const titlePartVariants = (direction) => ({
+export const titlePartVariant = (direction) => ({
   hidden: {
     x: direction === "left" ? "-30vw" : "30vw",
     opacity: 0,
@@ -36,7 +36,7 @@ export const titlePartVariants = (direction) => ({
   },
 });
 
-export const descVariants = {
+export const descVariant = {
   hidden: {
     opacity: 0,
     y: -20,
@@ -54,7 +54,7 @@ export const descVariants = {
   },
 };
 
-export const linksContainerVariants = {
+export const linksContainerVariant = {
   hidden: {
     opacity: 0,
     y: -20,
@@ -70,7 +70,7 @@ export const linksContainerVariants = {
   },
 };
 
-export const linksVariants = {
+export const linksVariant = {
   hidden: {
     opacity: 0,
   },

@@ -5,37 +5,37 @@ import { AiFillGithub } from "react-icons/ai";
 import { FaTelegram } from "react-icons/fa";
 import { motion } from "framer-motion";
 import {
-  containerVariants,
-  titleVariants,
-  titlePartVariants,
-  descVariants,
-  linksContainerVariants,
-  linksVariants,
+  containerVariant,
+  titleVariant,
+  titlePartVariant,
+  descVariant,
+  linksContainerVariant,
+  linksVariant,
 } from "../utils/motion";
 
 export default function About() {
   return (
     <Container id="about">
       <TextContent
-        variants={containerVariants}
+        variants={containerVariant}
         initial="hidden"
         animate="visible"
       >
-        <Title variants={titleVariants}>
-          <TitlePart variants={titlePartVariants("left")}>
+        <Title variants={titleVariant}>
+          <TitlePart variants={titlePartVariant("left")}>
             Hello, I'm Marina
           </TitlePart>
-          <TitlePart variants={titlePartVariants("right")}>
+          <TitlePart variants={titlePartVariant("right")}>
             Frontend Developer
           </TitlePart>
         </Title>
-        <Desc variants={descVariants}>
+        <Desc variants={descVariant}>
           I am fascinated by the magic of transforming lines of code into
           beautiful apps we use everyday.
         </Desc>
-        <LinksContainer variants={linksContainerVariants}>
+        <LinksContainer variants={linksContainerVariant}>
           <Link
-            variants={linksVariants}
+            variants={linksVariant}
             href="https://github.com/MarinGr"
             target="_blank"
           >
@@ -43,7 +43,7 @@ export default function About() {
             <LinkDesc>MarinGr</LinkDesc>
           </Link>
           <Link
-            variants={linksVariants}
+            variants={linksVariant}
             href="mailto:
 marina.grishn@gmail.com"
           >
@@ -51,7 +51,7 @@ marina.grishn@gmail.com"
             <LinkDesc>marina.grishn@gmail.com</LinkDesc>
           </Link>
           <Link
-            variants={linksVariants}
+            variants={linksVariant}
             href="https://t.me/marina_grishn"
             target="_blank"
           >
@@ -72,7 +72,7 @@ const Container = styled(motion.section)`
   margin-top: 100px;
 
   @media (max-width: 480px) {
-    margin-top: 60px;
+    margin-top: 40px;
   }
 `;
 
@@ -117,7 +117,7 @@ const TitlePart = styled(motion.h1)`
 const Desc = styled(motion.p)`
   font-size: 22px;
   line-height: 150%;
-  margin-top: 32px;
+  margin-top: 36px;
   margin-bottom: 48px;
 
   @media (max-width: 768px) {
@@ -128,8 +128,8 @@ const Desc = styled(motion.p)`
 
   @media (max-width: 480px) {
     font-size: 16px;
-    margin-top: 24px;
-    margin-bottom: 28px;
+    /* margin-top: 24px; */
+    /* margin-bottom: 28px; */
   }
 `;
 
@@ -137,14 +137,15 @@ const LinksContainer = styled(motion.div)`
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-bottom: 72px;
+  /* margin-bottom: 72px; */
 
   @media (max-width: 768px) {
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
   }
 
   @media (max-width: 480px) {
-    margin-bottom: 48px;
+    /* gap: 16px; */
+    /* margin-bottom: 48px; */
   }
 `;
 
@@ -165,13 +166,20 @@ const Link = styled(motion.a)`
 `;
 
 const iconStyles = css`
-  font-size: 24px;
   font-size: 28px;
+
+  @media (max-width: 480px) {
+    font-size: 22px;
+  }
 `;
 
 const GithubIcon = styled(AiFillGithub)`
   ${iconStyles};
   font-size: 30px;
+
+  @media (max-width: 480px) {
+    font-size: 24px;
+  }
 `;
 
 const EmailIcon = styled(MdEmail)`

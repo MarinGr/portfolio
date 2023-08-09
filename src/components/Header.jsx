@@ -3,6 +3,7 @@ import styled, { css } from "styled-components";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { GrClose } from "react-icons/gr";
 import Nav from "./Nav";
+import { Link } from "react-scroll";
 
 export default function Header() {
   const [width, setWidth] = useState(window.innerWidth);
@@ -26,7 +27,9 @@ export default function Header() {
 
   return (
     <Container>
-      <Logo>Marina Grishina</Logo>
+      <Link smooth to="about">
+        <Logo>Marina Grishina</Logo>
+      </Link>
       {width > 1024 && <Nav />}
       {isShownMenu && width < 1024 ? (
         <>
@@ -52,7 +55,9 @@ const Container = styled.header`
   font-weight: 600;
 `;
 
-const Logo = styled.div``;
+const Logo = styled.div`
+  cursor: pointer;
+`;
 
 const burgerMenuStyles = css`
   display: none;

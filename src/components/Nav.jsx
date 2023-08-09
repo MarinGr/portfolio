@@ -10,13 +10,13 @@ export default function Nav() {
         </Link>
       </NavItem>
       <NavItem>
-        <Link smooth to="projects">
-          Projects
+        <Link smooth to="stack">
+          Stack
         </Link>
       </NavItem>
       <NavItem>
-        <Link smooth to="stack">
-          Stack
+        <Link smooth to="projects">
+          Projects
         </Link>
       </NavItem>
       <NavItem>
