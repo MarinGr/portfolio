@@ -49,6 +49,7 @@ export default function Contacts() {
 
 const Title = styled(motion.h2)`
   ${sectionTitleStyle};
+  margin-top: 120px;
 `;
 
 const Desc = styled(motion.p)`
@@ -71,9 +72,10 @@ const Desc = styled(motion.p)`
 
 const BtnsContainer = styled(motion.div)`
   margin-top: 20px;
+  margin-bottom: 120px;
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 44px;
   color: var(--primary-color);
 `;
 
@@ -145,8 +147,8 @@ const EmailIcon = styled(MdEmail)`
 
 const FloatImgContainer = styled(motion.div)`
   position: absolute;
-  right: 140px;
-  bottom: 250px;
+  right: 180px;
+  bottom: 380px;
 
   @media (max-width: 1280px) {
     display: none;
