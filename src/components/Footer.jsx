@@ -14,4 +14,8 @@ const Container = styled.footer`
   margin-top: auto;
 `;
 
-const Copyright = styled.p``;
+const Copyright = styled.p`
+  @media (max-width: 990px) {
+    text-align: center;
+  }
+`;

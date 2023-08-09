@@ -105,4 +105,6 @@ const LiveDemoIcon = styled(FiExternalLink)`
   font-size: 18px;
 `;
 
-const LinkDesc = styled.p``;
+const LinkDesc = styled.p`
+  font-weight: 500;
+`;

@@ -16,9 +16,4 @@ export default function SlideInSection(props) {
   );
 }
 
-const Section = styled(motion.section)`
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
-`;
+const Section = styled(motion.section)``;

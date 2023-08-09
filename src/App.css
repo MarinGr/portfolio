@@ -18,7 +18,9 @@
   --primary-color: #74226c;
   --primary-color-hover: #66145e;
   --primary-color-active: #550d4e;
+  --text-color-primary: #333;
   --shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  --btn-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   --font-family-primary: "Montserrat", sans-serif;
   --font-family-title: "Maven Pro", sans-serif;
 }
@@ -72,11 +74,6 @@ a,
 a:visited {
   text-decoration: none;
   color: inherit;
-}
-
-a:focus,
-a:active {
-  outline: none;
 }
 
 @media (max-width: 1024px) {

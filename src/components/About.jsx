@@ -42,14 +42,7 @@ export default function About() {
             <GithubIcon />
             <LinkDesc>MarinGr</LinkDesc>
           </Link>
-          <Link
-            variants={linksVariant}
-            href="mailto:
-marina.grishn@gmail.com"
-          >
-            <EmailIcon />
-            <LinkDesc>marina.grishn@gmail.com</LinkDesc>
-          </Link>
+
           <Link
             variants={linksVariant}
             href="https://t.me/marina_grishn"
@@ -57,6 +50,10 @@ marina.grishn@gmail.com"
           >
             <TelegramIcon />
             <LinkDesc>@marina_grishn</LinkDesc>
+          </Link>
+          <Link variants={linksVariant} href="mailto:marina.grishn@gmail.com">
+            <EmailIcon />
+            <LinkDesc>marina.grishn@gmail.com</LinkDesc>
           </Link>
         </LinksContainer>
       </TextContent>
@@ -128,8 +125,6 @@ const Desc = styled(motion.p)`
 
   @media (max-width: 480px) {
     font-size: 16px;
-    /* margin-top: 24px; */
-    /* margin-bottom: 28px; */
   }
 `;
 
@@ -137,16 +132,6 @@ const LinksContainer = styled(motion.div)`
   display: flex;
   flex-direction: column;
   gap: 20px;
-  /* margin-bottom: 72px; */
-
-  @media (max-width: 768px) {
-    /* margin-bottom: 60px; */
-  }
-
-  @media (max-width: 480px) {
-    /* gap: 16px; */
-    /* margin-bottom: 48px; */
-  }
 `;
 
 const linkStyles = css`
@@ -155,6 +140,11 @@ const linkStyles = css`
   align-items: center;
   gap: 10px;
   font-size: 20px;
+  transform-origin: 0;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 
   @media (max-width: 480px) {
     font-size: 16px;
