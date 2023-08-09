@@ -1,8 +1,5 @@
 import styled, { css } from "styled-components";
 import { linkHoverStyles } from "../assets/styles";
-import { MdEmail } from "react-icons/md";
-import { AiFillGithub } from "react-icons/ai";
-import { FaTelegram } from "react-icons/fa";
 import { motion } from "framer-motion";
 import {
   containerVariant,
@@ -12,6 +9,7 @@ import {
   linksContainerVariant,
   linksVariant,
 } from "../utils/motion";
+import { Github, Telegram, Email } from "../assets/icons/icons";
 
 export default function About() {
   return (
@@ -163,7 +161,7 @@ const iconStyles = css`
   }
 `;
 
-const GithubIcon = styled(AiFillGithub)`
+const GithubIcon = styled(Github)`
   ${iconStyles};
   font-size: 30px;
 
@@ -172,11 +170,11 @@ const GithubIcon = styled(AiFillGithub)`
   }
 `;
 
-const EmailIcon = styled(MdEmail)`
+const EmailIcon = styled(Email)`
   ${iconStyles};
 `;
 
-const TelegramIcon = styled(FaTelegram)`
+const TelegramIcon = styled(Telegram)`
   ${iconStyles};
 `;
 

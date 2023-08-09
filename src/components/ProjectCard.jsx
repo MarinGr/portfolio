@@ -1,7 +1,6 @@
 import styled from "styled-components";
-import { AiFillGithub } from "react-icons/ai";
-import { FiExternalLink } from "react-icons/fi";
 import { linkHoverStyles } from "../assets/styles";
+import { Github, LiveDemo } from "../assets/icons/icons";
 
 export default function ProjectCard({ project }) {
   return (
@@ -97,12 +96,12 @@ const ProjectLink = styled.a`
   transition: 0.2s ease-in-out;
 `;
 
-const GithubIcon = styled(AiFillGithub)`
-  font-size: 20px;
+const GithubIcon = styled(Github)`
+  font-size: 22px;
 `;
 
-const LiveDemoIcon = styled(FiExternalLink)`
-  font-size: 18px;
+const LiveDemoIcon = styled(LiveDemo)`
+  font-size: 20px;
 `;
 
 const LinkDesc = styled.p`
