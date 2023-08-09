@@ -10,11 +10,13 @@ export const sectionTitleStyle = `
 `;
 
 export const linkHoverStyles = `
+  transform-origin: 0 ;
   cursor: pointer;
-  transition: 0.2s ease-in-out;
+  transition: 0.3s ease-in-out;
   
   &:hover {
     color: var(--primary-color);
+    transform: scale(1.07);
   }
 
   &:active {

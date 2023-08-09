@@ -1,69 +1,153 @@
 import styled, { css } from "styled-components";
-import { linkHoverStyles, CTABtn } from "../assets/styles";
-import { Link as ScrollLink } from "react-scroll";
-import { FiArrowDown } from "react-icons/fi";
+import { linkHoverStyles } from "../assets/styles";
 import { MdEmail } from "react-icons/md";
 import { AiFillGithub } from "react-icons/ai";
 import { FaTelegram } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 export default function About() {
   return (
     <Container id="about">
-      <TextContent>
-        <Title>
-          Hello, I'm Marina,
-          <br /> Frontend Developer
+      <TextContent
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
+        <Title variants={titleVariants}>
+          <TitlePart variants={titlePartVariants("left")}>
+            Hello, I'm Marina
+          </TitlePart>
+          <TitlePart variants={titlePartVariants("right")}>
+            Frontend Developer
+          </TitlePart>
         </Title>
-        <Desc>
+        <Desc variants={descVariants}>
           I am fascinated by the magic of transforming lines of code into
           beautiful apps we use everyday.
         </Desc>
-        <LinksContainer>
-          <Link href="https://github.com/MarinGr" target="_blank">
+        <LinksContainer variants={linksContainerVariants}>
+          <Link
+            variants={linksVariants}
+            href="https://github.com/MarinGr"
+            target="_blank"
+          >
             <GithubIcon />
-            <LinkDesc>Github</LinkDesc>
+            <LinkDesc>MarinGr</LinkDesc>
           </Link>
           <Link
+            variants={linksVariants}
             href="mailto:
 marina.grishn@gmail.com"
           >
             <EmailIcon />
             <LinkDesc>marina.grishn@gmail.com</LinkDesc>
           </Link>
-          {/* <a href="https://t.me/ana_zhuravleva" target="_blank"></a> */}
-          <Link href="https://t.me/marina_grishn" target="_blank">
+          <Link
+            variants={linksVariants}
+            href="https://t.me/marina_grishn"
+            target="_blank"
+          >
             <TelegramIcon />
             <LinkDesc>@marina_grishn</LinkDesc>
           </Link>
         </LinksContainer>
-        <ScrollLink smooth to="projects">
-          <Btn>
-            View my work <ArrowDownIcon />
-          </Btn>
-        </ScrollLink>
       </TextContent>
     </Container>
   );
 }
+const containerVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      delayChildren: 0,
+      staggerChildren: 0.6,
+    },
+  },
+};
 
-const Container = styled.section`
+const titleVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+  },
+};
+
+const titlePartVariants = (direction) => ({
+  hidden: {
+    x: direction === "left" ? "-100vw" : "100vw",
+    opacity: 0,
+  },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      ease: "easeInOut",
+      stiffness: 30,
+    },
+  },
+  transition: {
+    ease: "easeInOut",
+  },
+});
+
+const descVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      ease: "easeInOut",
+      opacity: {
+        duration: 1,
+      },
+    },
+  },
+};
+
+const linksContainerVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      delayChildren: 0,
+      staggerChildren: 0.3,
+    },
+  },
+};
+
+const linksVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 0.4,
+    },
+  },
+};
+
+const Container = styled(motion.section)`
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin-top: 100px;
 
-  @media (max-width: 990px) {
-    margin-top: 40px;
-  }
-
   @media (max-width: 480px) {
-    margin-top: 20px;
+    margin-top: 40px;
   }
 `;
 
-const TextContent = styled.div`
-  max-width: 45%;
+const TextContent = styled(motion.div)`
+  max-width: 40%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -77,95 +161,90 @@ const TextContent = styled.div`
   }
 `;
 
-const Title = styled.h1`
-  font-size: 54px;
+const Title = styled(motion.div)``;
+
+const TitlePart = styled(motion.h1)`
+  font-size: 64px;
   background-color: var(--primary-color);
   background: var(--text-color-headline);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 32px;
 
   @media (max-width: 768px) {
     font-size: 48px;
-    margin-bottom: 28px;
   }
 
   @media (max-width: 480px) {
     font-size: 32px;
-    margin-bottom: 24px;
   }
 `;
 
-const Desc = styled.p`
+const Desc = styled(motion.p)`
   font-size: 22px;
   line-height: 150%;
-  margin-bottom: 40px;
+  margin-top: 32px;
+  margin-bottom: 48px;
 
   @media (max-width: 768px) {
     font-size: 18px;
+    margin-top: 28px;
     margin-bottom: 32px;
   }
 
   @media (max-width: 480px) {
     font-size: 16px;
+    margin-top: 24px;
     margin-bottom: 28px;
   }
 `;
 
-const LinksContainer = styled.div`
+const LinksContainer = styled(motion.div)`
   display: flex;
-  gap: 48px;
+  flex-direction: column;
+  gap: 20px;
   margin-bottom: 72px;
 
   @media (max-width: 768px) {
-    flex-direction: column;
-    gap: 32px;
     margin-bottom: 60px;
   }
 
   @media (max-width: 480px) {
-    gap: 28px;
     margin-bottom: 48px;
   }
 `;
 
 const linkStyles = css`
-  ${linkHoverStyles}
+  ${linkHoverStyles};
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: 18px;
+  gap: 10px;
+  font-size: 20px;
 
   @media (max-width: 480px) {
     font-size: 16px;
   }
 `;
 
-const Link = styled.a`
-  ${linkStyles}
+const Link = styled(motion.a)`
+  ${linkStyles};
 `;
 
-const EmailIcon = styled(MdEmail)`
-  font-size: 20px;
+const iconStyles = css`
+  font-size: 24px;
+  font-size: 28px;
 `;
 
 const GithubIcon = styled(AiFillGithub)`
-  font-size: 20px;
+  ${iconStyles};
+  font-size: 30px;
+`;
+
+const EmailIcon = styled(MdEmail)`
+  ${iconStyles};
 `;
 
 const TelegramIcon = styled(FaTelegram)`
-  font-size: 20px;
+  ${iconStyles};
 `;
 
 const LinkDesc = styled.p``;
-
-const Btn = styled.button`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 14px;
-  ${CTABtn};
-`;
-const ArrowDownIcon = styled(FiArrowDown)`
-  font-size: 20px;
-`;
