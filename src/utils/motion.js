@@ -83,29 +83,29 @@ export const linksVariants = {
   },
 };
 
-//
-
 export const fadeInVariant = {
   hidden: {
-    transition: {
-      staggerChildren: 0.1,
-      staggerDirection: -1,
-    },
+    transition: {},
   },
   visible: {
     transition: {
-      staggerChildren: 0.1,
+      staggerChildren: 0.2,
     },
   },
 };
 
-export const contantVariant = {
+export const contentVariant = {
   hidden: {
     opacity: 0,
-    x: -16,
+    y: 50,
   },
   visible: {
     opacity: 1,
-    x: 0,
+    y: 0,
+    transition: {
+      type: "tween",
+      ease: "easeOut",
+      duration: 0.3,
+    },
   },
 };

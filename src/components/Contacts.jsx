@@ -1,12 +1,15 @@
 import styled from "styled-components";
 import { sectionTitleStyle, CTABtn } from "../assets/styles";
 import { MdEmail } from "react-icons/md";
+import SlideInSection from "./SlideInSection";
+import { contentVariant } from "../utils/motion";
+import { motion } from "framer-motion";
 
 export default function Contacts() {
   return (
-    <Container id="contacts">
-      <Title>Contact me</Title>
-      <Desc>
+    <SlideInSection id="contacts">
+      <Title variants={contentVariant}>Contact me</Title>
+      <Desc variants={contentVariant}>
         Interested in working together? Please send me a message, I'll get back
         to you as soon as possible.
       </Desc>
@@ -17,26 +20,27 @@ marina.grishn@gmail.com"
         <EmailIcon />
         Email me
       </EmailBtn>
-    </Container>
+    </SlideInSection>
   );
 }
 
-const Container = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+// const Container = styled.section`
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
 
-  @media (max-width: 990px) {
-    margin-bottom: 20px;
-  }
-`;
+//   @media (max-width: 990px) {
+//     margin-bottom: 20px;
+//   }
+// `;
 
-const Title = styled.h2`
+const Title = styled(motion.h2)`
   ${sectionTitleStyle};
 `;
 
-const Desc = styled.p`
+const Desc = styled(motion.p)`
+  margin: 0 auto;
   max-width: 40%;
   font-size: 18px;
   line-height: 160%;
@@ -53,7 +57,8 @@ const Desc = styled.p`
   }
 `;
 
-const EmailBtn = styled.a`
+const EmailBtn = styled(motion.a)`
+  margin: 0 auto;
   ${CTABtn}
   display: flex;
   justify-content: center;

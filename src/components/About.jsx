@@ -88,6 +88,8 @@ const TextContent = styled(motion.div)`
 
   @media (max-width: 990px) {
     max-width: 100%;
+    text-align: center;
+    align-items: center;
   }
 `;
 
