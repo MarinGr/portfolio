@@ -4,6 +4,14 @@ import { MdEmail } from "react-icons/md";
 import { AiFillGithub } from "react-icons/ai";
 import { FaTelegram } from "react-icons/fa";
 import { motion } from "framer-motion";
+import {
+  containerVariants,
+  titleVariants,
+  titlePartVariants,
+  descVariants,
+  linksContainerVariants,
+  linksVariants,
+} from "../utils/motion";
 
 export default function About() {
   return (
@@ -55,84 +63,6 @@ marina.grishn@gmail.com"
     </Container>
   );
 }
-const containerVariants = {
-  hidden: {
-    opacity: 0,
-  },
-  visible: {
-    opacity: 1,
-    transition: {
-      delayChildren: 0,
-      staggerChildren: 0.6,
-    },
-  },
-};
-
-const titleVariants = {
-  hidden: {
-    opacity: 0,
-  },
-  visible: {
-    opacity: 1,
-  },
-};
-
-const titlePartVariants = (direction) => ({
-  hidden: {
-    x: direction === "left" ? "-100vw" : "100vw",
-    opacity: 0,
-  },
-  visible: {
-    x: 0,
-    opacity: 1,
-    transition: {
-      type: "spring",
-      ease: "easeInOut",
-      stiffness: 30,
-    },
-  },
-  transition: {
-    ease: "easeInOut",
-  },
-});
-
-const descVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      ease: "easeInOut",
-      opacity: {
-        duration: 1.7,
-      },
-    },
-  },
-};
-
-const linksContainerVariants = {
-  hidden: {
-    opacity: 0,
-  },
-  visible: {
-    opacity: 1,
-    transition: {
-      delayChildren: 0,
-      staggerChildren: 0.2,
-    },
-  },
-};
-
-const linksVariants = {
-  hidden: {
-    opacity: 0,
-  },
-  visible: {
-    opacity: 1,
-    transition: {
-      duration: 0.5,
-    },
-  },
-};
 
 const Container = styled(motion.section)`
   display: flex;
