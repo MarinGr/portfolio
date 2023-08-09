@@ -109,3 +109,36 @@ export const contentVariant = {
     },
   },
 };
+
+export const floatImgContainerVariant = {
+  hidden: {
+    opacity: 0,
+    y: 50,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "tween",
+      ease: "easeOut",
+      duration: 0.7,
+      staggerChildren: 1.2,
+    },
+  },
+};
+
+export const floatImgVariant = {
+  hidden: {
+    y: 20,
+  },
+  visible: {
+    y: 0,
+    transition: {
+      type: "tween",
+      ease: "easeInOut",
+      duration: 1.6,
+      repeatType: "reverse",
+      repeat: Infinity,
+    },
+  },
+};

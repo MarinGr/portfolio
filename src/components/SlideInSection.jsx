@@ -16,4 +16,6 @@ export default function SlideInSection(props) {
   );
 }
 
-const Section = styled(motion.section)``;
+const Section = styled(motion.section)`
+  position: relative;
+`;

@@ -1,12 +1,16 @@
 import styled, { css } from "styled-components";
 import { sectionTitleStyle } from "../assets/styles";
 import SlideInSection from "./SlideInSection";
-import { contentVariant } from "../utils/motion";
+import {
+  contentVariant,
+  floatImgContainerVariant,
+  floatImgVariant,
+} from "../utils/motion";
 import { motion } from "framer-motion";
-
 import { MdEmail } from "react-icons/md";
 import { AiFillGithub } from "react-icons/ai";
 import { FaTelegram } from "react-icons/fa";
+import codingImg from "../assets/images/coding.png";
 
 export default function Contacts() {
   return (
@@ -32,6 +36,13 @@ export default function Contacts() {
           <BtnDesc>Email</BtnDesc>
         </Btn>
       </BtnsContainer>
+      <FloatImgContainer variants={floatImgContainerVariant}>
+        <FloatImg
+          src={codingImg}
+          alt="coding person"
+          variants={floatImgVariant}
+        />
+      </FloatImgContainer>
     </SlideInSection>
   );
 }
@@ -131,3 +142,15 @@ const TelegramIcon = styled(FaTelegram)`
 const EmailIcon = styled(MdEmail)`
   ${iconStyles};
 `;
+
+const FloatImgContainer = styled(motion.div)`
+  position: absolute;
+  right: 140px;
+  bottom: 250px;
+
+  @media (max-width: 1280px) {
+    display: none;
+  }
+`;
+
+const FloatImg = styled(motion.img)``;
