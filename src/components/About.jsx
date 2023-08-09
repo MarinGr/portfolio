@@ -103,7 +103,7 @@ const descVariants = {
     transition: {
       ease: "easeInOut",
       opacity: {
-        duration: 1,
+        duration: 1.7,
       },
     },
   },
@@ -117,7 +117,7 @@ const linksContainerVariants = {
     opacity: 1,
     transition: {
       delayChildren: 0,
-      staggerChildren: 0.3,
+      staggerChildren: 0.2,
     },
   },
 };
@@ -129,7 +129,7 @@ const linksVariants = {
   visible: {
     opacity: 1,
     transition: {
-      duration: 0.4,
+      duration: 0.5,
     },
   },
 };
