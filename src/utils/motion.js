@@ -6,7 +6,7 @@ export const containerVariants = {
     opacity: 1,
     transition: {
       delayChildren: 0,
-      staggerChildren: 0.6,
+      staggerChildren: 0.3,
     },
   },
 };

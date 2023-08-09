@@ -20,6 +20,7 @@
   --primary-color-active: #550d4e;
   --shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   --font-family-primary: "Montserrat", sans-serif;
+  --font-family-title: "Maven Pro", sans-serif;
 }
 
 * {

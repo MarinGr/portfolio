@@ -72,7 +72,7 @@ const Container = styled(motion.section)`
   margin-top: 100px;
 
   @media (max-width: 480px) {
-    margin-top: 40px;
+    margin-top: 60px;
   }
 `;
 
@@ -91,21 +91,24 @@ const TextContent = styled(motion.div)`
   }
 `;
 
-const Title = styled(motion.div)``;
+const Title = styled(motion.div)`
+  font-family: var(--font-family-title);
+  font-weight: 700;
+`;
 
 const TitlePart = styled(motion.h1)`
-  font-size: 64px;
+  font-size: 70px;
   background-color: var(--primary-color);
   background: var(--text-color-headline);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
   @media (max-width: 768px) {
-    font-size: 48px;
+    font-size: 52px;
   }
 
   @media (max-width: 480px) {
-    font-size: 32px;
+    font-size: 38px;
   }
 `;
 
