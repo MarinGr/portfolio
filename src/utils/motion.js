@@ -104,8 +104,8 @@ export const contentVariant = {
     y: 0,
     transition: {
       type: "tween",
-      ease: "easeOut",
-      duration: 0.3,
+      ease: "easeInOut",
+      duration: 0.4,
     },
   },
 };
