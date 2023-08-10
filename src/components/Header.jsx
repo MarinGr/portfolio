@@ -1,13 +1,19 @@
 import { useState, useEffect } from "react";
-import styled, { css } from "styled-components";
-import { RxHamburgerMenu } from "react-icons/rx";
-import { GrClose } from "react-icons/gr";
+import styled from "styled-components";
 import Nav from "./Nav";
 import { Link } from "react-scroll";
+import SidebarNav from "./SidebarNav";
 
 export default function Header() {
   const [width, setWidth] = useState(window.innerWidth);
-  const [isShownMenu, setisShownMenu] = useState(false);
+  const [isShownMenu, setIsShownMenu] = useState(false);
+
+  const navLinks = [
+    { name: "About", to: "about", id: 1 },
+    { name: "Stack", to: "stack", id: 2 },
+    { name: "Projects", to: "projects", id: 3 },
+    { name: "Contacts", to: "contacts", id: 4 },
+  ];
 
   function updateWidth() {
     setWidth(window.innerWidth);
@@ -18,11 +24,11 @@ export default function Header() {
   }, [width]);
 
   function showBurgerMenu() {
-    setisShownMenu(true);
+    setIsShownMenu(true);
   }
 
   function hideBurgerMenu() {
-    setisShownMenu(false);
+    setIsShownMenu(false);
   }
 
   return (
@@ -30,16 +36,16 @@ export default function Header() {
       <Link smooth to="about">
         <Logo>Marina Grishina</Logo>
       </Link>
-      {width > 1024 && <Nav />}
-      {isShownMenu && width < 1024 ? (
-        <>
-          <CloseMenuIcon onClick={hideBurgerMenu} />
-          <Nav />
-        </>
+
+      {width > 1024 ? (
+        <Nav navLinks={navLinks} />
       ) : (
-        <>
-          <MenuIcon onClick={showBurgerMenu} />
-        </>
+        <SidebarNav
+          navLinks={navLinks}
+          isShownMenu={isShownMenu}
+          showBurgerMenu={showBurgerMenu}
+          hideBurgerMenu={hideBurgerMenu}
+        />
       )}
     </Container>
   );
@@ -57,22 +63,4 @@ const Container = styled.header`
 
 const Logo = styled.div`
   cursor: pointer;
-`;
-
-const burgerMenuStyles = css`
-  display: none;
-
-  @media (max-width: 1024px) {
-    display: block;
-    font-size: 24px;
-    cursor: pointer;
-  }
-`;
-
-const MenuIcon = styled(RxHamburgerMenu)`
-  ${burgerMenuStyles}
-`;
-
-const CloseMenuIcon = styled(GrClose)`
-  ${burgerMenuStyles}
 `;

@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { linkHoverStyles } from "../assets/styles";
+import { linkHoverStyle } from "../assets/styles";
 import { motion } from "framer-motion";
 import {
   containerVariant,
@@ -133,7 +133,7 @@ const LinksContainer = styled(motion.div)`
 `;
 
 const linkStyles = css`
-  ${linkHoverStyles};
+  ${linkHoverStyle};
   display: flex;
   align-items: center;
   gap: 10px;

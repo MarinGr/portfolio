@@ -11,7 +11,23 @@ export const sectionTitleStyle = `
   }
 `;
 
-export const linkHoverStyles = `
+export const navLinkStyle = `
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  padding-bottom: 4px;
+
+  &:hover {
+    color: var(--primary-color);
+    box-shadow: 0 3px 0 var(--primary-color);
+  }
+
+  &:active {
+    color: var(--primary-color-active);
+    box-shadow: 0 3px 0 var(--primary-color-active);
+  }
+`;
+
+export const linkHoverStyle = `
   cursor: pointer;
   transition: 0.3s ease-in-out;
   

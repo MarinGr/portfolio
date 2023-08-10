@@ -74,12 +74,12 @@ const BtnsContainer = styled(motion.div)`
   display: flex;
   justify-content: center;
   gap: 44px;
-  color: var(--primary-color);
+  color: var(--text-color-primary);
 `;
 
 const Btn = styled.a`
   background-color: var(--white);
-  outline: 2px solid var(--primary-color);
+  outline: 1px solid var(--text-color-primary);
   font-size: 18px;
   font-weight: 500;
   width: 200px;
@@ -96,11 +96,12 @@ const Btn = styled.a`
   &:hover {
     background-color: var(--primary-color);
     color: var(--white);
+    outline-color: var(--primary-color);
   }
 
   &:active {
     background-color: var(--primary-color);
-    outline: 2px solid var(--primary-color);
+    outline-color: var(--primary-color);
   }
 
   @media (max-width: 990px) {

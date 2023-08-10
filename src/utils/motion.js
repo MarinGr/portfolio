@@ -142,3 +142,23 @@ export const floatImgVariant = {
     },
   },
 };
+
+export const sidebarVariant = {
+  hidden: {
+    opacity: 0,
+    x: 50,
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      type: "tween",
+      ease: "easeOut",
+      duration: 0.2,
+    },
+  },
+  exit: {
+    opacity: 0,
+    x: 50,
+  },
+};

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { linkHoverStyles } from "../assets/styles";
+import { linkHoverStyle } from "../assets/styles";
 import { Github, LiveDemo } from "../assets/icons/icons";
 
 export default function ProjectCard({ project }) {
@@ -88,7 +88,7 @@ const ProjectLinksContainer = styled.div`
 `;
 
 const ProjectLink = styled.a`
-  ${linkHoverStyles}
+  ${linkHoverStyle}
   display: flex;
   align-items: center;
   gap: 8px;
