@@ -100,8 +100,11 @@ const Btn = styled.a`
   }
 
   &:active {
-    background-color: var(--primary-color);
-    outline-color: var(--primary-color);
+    outline-color: var(--text-color-primary);
+  }
+
+  &:focus {
+    outline-color: var(--text-color-primary);
   }
 
   @media (max-width: 990px) {

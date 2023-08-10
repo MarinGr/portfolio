@@ -39,4 +39,8 @@ export const linkHoverStyle = `
     color: var(--primary-color-active);
     outline: none;
   }
+
+  &:focus {
+    outline: none;
+  }
 `;
