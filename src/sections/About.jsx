@@ -8,17 +8,22 @@ import {
   descVariant,
   linksContainerVariant,
   linksVariant,
+  floatImgContainerVariant,
+  floatImgVariant,
 } from "../utils/motion";
 import { Github, Telegram, Email } from "../assets/icons/icons";
+import laptopImg from "../assets/images/globalImages/laptop.png";
+import Blob from "../components/Blob";
 
 export default function About() {
   return (
-    <Container id="about">
-      <TextContent
-        variants={containerVariant}
-        initial="hidden"
-        animate="visible"
-      >
+    <Container
+      id="about"
+      variants={containerVariant}
+      initial="hidden"
+      animate="visible"
+    >
+      <TextContent>
         <Title variants={titleVariant}>
           <TitlePart variants={titlePartVariant("left")}>
             Hello, I'm Marina
@@ -55,14 +60,20 @@ export default function About() {
           </Link>
         </LinksContainer>
       </TextContent>
+      <FloatImgContainer variants={floatImgContainerVariant}>
+        <Blob />
+        <FloatImg src={laptopImg} alt="laptop" variants={floatImgVariant} />
+      </FloatImgContainer>
     </Container>
   );
 }
 
 const Container = styled(motion.section)`
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 40px;
   height: 100vh;
   margin-top: 100px;
 
@@ -179,3 +190,19 @@ const TelegramIcon = styled(Telegram)`
 `;
 
 const LinkDesc = styled.p``;
+
+const FloatImgContainer = styled(motion.div)`
+  height: 300px;
+  width: 300px;
+  position: relative;
+
+  @media (max-width: 1280px) {
+    display: none;
+  }
+`;
+
+const FloatImg = styled(motion.img)`
+  position: absolute;
+  left: 80px;
+  bottom: 120px;
+`;

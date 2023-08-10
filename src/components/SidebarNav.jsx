@@ -68,7 +68,7 @@ const NavList = styled(motion.ul)`
   right: 0;
   padding: 40px 80px;
   height: 100vh;
-  background: var(--burger-nav-bg-color);
+  background: var(--transparent-bg-color);
   color: var(--text-color-primary);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);

@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import styled from "styled-components";
-import Nav from "./Nav";
+import Nav from "../components/Nav";
+import SidebarNav from "../components/SidebarNav";
 import { Link } from "react-scroll";
-import SidebarNav from "./SidebarNav";
 
 export default function Header() {
   const [width, setWidth] = useState(window.innerWidth);
@@ -32,22 +32,24 @@ export default function Header() {
   }
 
   return (
-    <Container>
-      <Link smooth to="about">
-        <Logo>Marina Grishina</Logo>
-      </Link>
+    <>
+      <Container>
+        <Link smooth to="about">
+          <Logo>Marina Grishina</Logo>
+        </Link>
 
-      {width > 1024 ? (
-        <Nav navLinks={navLinks} />
-      ) : (
-        <SidebarNav
-          navLinks={navLinks}
-          isShownMenu={isShownMenu}
-          showBurgerMenu={showBurgerMenu}
-          hideBurgerMenu={hideBurgerMenu}
-        />
-      )}
-    </Container>
+        {width > 1024 ? (
+          <Nav navLinks={navLinks} />
+        ) : (
+          <SidebarNav
+            navLinks={navLinks}
+            isShownMenu={isShownMenu}
+            showBurgerMenu={showBurgerMenu}
+            hideBurgerMenu={hideBurgerMenu}
+          />
+        )}
+      </Container>
+    </>
   );
 }
 

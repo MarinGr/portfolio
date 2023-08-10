@@ -106,4 +106,8 @@ const LiveDemoIcon = styled(LiveDemo)`
 
 const LinkDesc = styled.p`
   font-weight: 500;
+
+  @media (max-width: 480px) {
+    display: none;
+  }
 `;

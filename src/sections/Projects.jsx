@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { sectionTitleStyle } from "../assets/styles";
 import { projectsData } from "../assets/data/projectsData";
-import ProjectCard from "./ProjectCard";
-import SlideInSection from "./SlideInSection";
+import ProjectCard from "../components/ProjectCard";
+import SlideInSection from "../components/SlideInSection";
 import { contentVariant } from "../utils/motion";
 import { motion } from "framer-motion";
 

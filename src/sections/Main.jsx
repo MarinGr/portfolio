@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import About from "./About";
-import Contacts from "./Contacts";
-import Projects from "./Projects";
-import Stack from "./Stack";
+import About from "../sections/About";
+import Contacts from "../sections/Contacts";
+import Projects from "../sections/Projects";
+import Stack from "../sections/Stack";
 
 export default function Main() {
   return (

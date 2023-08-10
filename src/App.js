@@ -1,8 +1,8 @@
 import "./App.css";
 import styled from "styled-components";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Main from "./components/Main";
+import Footer from "./sections/Footer";
+import Header from "./sections/Header";
+import Main from "./sections/Main";
 
 export default function App() {
   return (
@@ -18,4 +18,5 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow: hidden;
 `;

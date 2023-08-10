@@ -12,10 +12,7 @@ export default function Footer() {
 
 const Container = styled.footer`
   margin-top: auto;
+  text-align: center;
 `;
 
-const Copyright = styled.p`
-  @media (max-width: 990px) {
-    text-align: center;
-  }
-`;
+const Copyright = styled.p``;

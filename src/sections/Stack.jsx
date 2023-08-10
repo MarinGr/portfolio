@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { sectionTitleStyle } from "../assets/styles";
-import StackCard from "./StackCard";
+import StackCard from "../components/StackCard";
 import { stackData } from "../assets/data/stackData";
-import SlideInSection from "./SlideInSection";
+import SlideInSection from "../components/SlideInSection";
 import { motion } from "framer-motion";
 import { contentVariant } from "../utils/motion";
 
