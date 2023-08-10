@@ -28,4 +28,13 @@ const StackContainer = styled(motion.div)`
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  margin-bottom: 90px;
+
+  @media (max-width: 990px) {
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 480px) {
+    margin-bottom: 20px;
+  }
 `;
