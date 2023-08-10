@@ -17,11 +17,11 @@ export default function ProjectCard({ project }) {
         </ProjectStack>
         <ProjectLinksContainer>
           <ProjectLink href={project.github} target="_blank">
-            <GithubIcon />
+            <GithubIcon alt="github" />
             <LinkDesc>Github</LinkDesc>
           </ProjectLink>
           <ProjectLink href={project.liveDemo} target="_blank">
-            <LiveDemoIcon />
+            <LiveDemoIcon alt="live demo" />
             <LinkDesc>Live demo</LinkDesc>
           </ProjectLink>
         </ProjectLinksContainer>

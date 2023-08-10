@@ -37,7 +37,7 @@ export default function About() {
             href="https://github.com/MarinGr"
             target="_blank"
           >
-            <GithubIcon />
+            <GithubIcon alt="github" />
             <LinkDesc>MarinGr</LinkDesc>
           </Link>
 
@@ -46,11 +46,11 @@ export default function About() {
             href="https://t.me/marina_grishn"
             target="_blank"
           >
-            <TelegramIcon />
+            <TelegramIcon alt="telegram" />
             <LinkDesc>@marina_grishn</LinkDesc>
           </Link>
           <Link variants={linksVariant} href="mailto:marina.grishn@gmail.com">
-            <EmailIcon />
+            <EmailIcon alt="email" />
             <LinkDesc>marina.grishn@gmail.com</LinkDesc>
           </Link>
         </LinksContainer>

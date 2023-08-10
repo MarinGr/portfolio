@@ -20,24 +20,24 @@ export default function Contacts() {
       </Desc>
       <BtnsContainer variants={contentVariant}>
         <Btn href="https://github.com/MarinGr" target="_blank">
-          <GithubIcon />
+          <GithubIcon alt="github" />
           <BtnDesc>GitHub</BtnDesc>
         </Btn>
 
         <Btn href="https://t.me/marina_grishn" target="_blank">
-          <TelegramIcon />
+          <TelegramIcon alt="telegram" />
           <BtnDesc>Telegram</BtnDesc>
         </Btn>
 
         <Btn href="mailto:marina.grishn@gmail.com">
-          <EmailIcon />
+          <EmailIcon alt="email" />
           <BtnDesc>Email</BtnDesc>
         </Btn>
       </BtnsContainer>
       <FloatImgContainer variants={floatImgContainerVariant}>
         <FloatImg
           src={codingImg}
-          alt="coding person"
+          alt="coding person image"
           variants={floatImgVariant}
         />
       </FloatImgContainer>
@@ -112,7 +112,6 @@ const Btn = styled.a`
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    outline-width: 1px;
   }
 `;
 

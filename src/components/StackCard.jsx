@@ -3,7 +3,7 @@ import styled from "styled-components";
 export default function StackCard({ stack }) {
   return (
     <Container>
-      <StackImg src={stack.img} alt="stack image" />
+      <StackImg src={stack.img} alt={`${stack.title} image`} />
       <StackTitle>{stack.title}</StackTitle>
     </Container>
   );
