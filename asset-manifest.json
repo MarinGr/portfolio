@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.f1674e54.css",
-    "main.js": "/portfolio/static/js/main.8b9b0d5e.js",
+    "main.css": "/portfolio/static/css/main.da4f50cc.css",
+    "main.js": "/portfolio/static/js/main.1ded8946.js",
     "static/media/food-shop.png": "/portfolio/static/media/food-shop.e8e7b0c173f16607517d.png",
     "static/media/loan-calculator.png": "/portfolio/static/media/loan-calculator.e16be459202024ddfb7c.png",
     "static/media/cryptocurrency-app.png": "/portfolio/static/media/cryptocurrency-app.c0987cf6f30fd7dacf10.png",
     "static/media/savings-goals.png": "/portfolio/static/media/savings-goals.a87fc89fdc57a5d473b0.png",
     "static/media/weather-app.png": "/portfolio/static/media/weather-app.26d725221ad68f03c2b5.png",
     "static/media/currency-converter.png": "/portfolio/static/media/currency-converter.9a94e3fb6f47d6c6609e.png",
+    "static/media/coding.png": "/portfolio/static/media/coding.5008813e67a6dd33aaca.png",
     "static/media/react.png": "/portfolio/static/media/react.083e99106e38b9b89c7e.png",
     "static/media/redux.png": "/portfolio/static/media/redux.d07d1f51b6903145491d.png",
     "static/media/sass.png": "/portfolio/static/media/sass.d31bfc9e7f11e0685400.png",
@@ -18,11 +19,11 @@
     "static/media/vuejs.png": "/portfolio/static/media/vuejs.50d6d91fec56bdedcf81.png",
     "static/media/js.png": "/portfolio/static/media/js.b7d037e37c92fd9bbb8d.png",
     "index.html": "/portfolio/index.html",
-    "main.f1674e54.css.map": "/portfolio/static/css/main.f1674e54.css.map",
-    "main.8b9b0d5e.js.map": "/portfolio/static/js/main.8b9b0d5e.js.map"
+    "main.da4f50cc.css.map": "/portfolio/static/css/main.da4f50cc.css.map",
+    "main.1ded8946.js.map": "/portfolio/static/js/main.1ded8946.js.map"
   },
   "entrypoints": [
-    "static/css/main.f1674e54.css",
-    "static/js/main.8b9b0d5e.js"
+    "static/css/main.da4f50cc.css",
+    "static/js/main.1ded8946.js"
   ]
 }
