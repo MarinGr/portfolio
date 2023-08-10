@@ -18,4 +18,5 @@ export default function SlideInSection(props) {
 
 const Section = styled(motion.section)`
   position: relative;
+  min-height: 30vh;
 `;
