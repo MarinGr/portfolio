@@ -5,6 +5,7 @@ import currencyConverterImg from "../images/projectsImages/currency-converter.pn
 import savingsGoalsImg from "../images/projectsImages/savings-goals.png";
 import cryptocurrencyAppImg from "../images/projectsImages/cryptocurrency-app.png";
 import loanCalculatorImg from "../images/projectsImages/loan-calculator.png";
+import chatbotImg from "../images/projectsImages/chatbot-interface.png";
 
 export const projectsData = [
   {
@@ -16,7 +17,6 @@ export const projectsData = [
     github: "https://github.com/MarinGr/shop-react",
     liveDemo: "https://maringr.github.io/shop-react/",
   },
-
   {
     id: uuidv4(),
     img: savingsGoalsImg,
@@ -28,6 +28,15 @@ export const projectsData = [
   },
   {
     id: uuidv4(),
+    img: chatbotImg,
+    title: "Chatbot interface",
+    desc: "Chatbot interface with response options built with Vue and Pinia. Includes additional dependency vue-loading-overlay.",
+    stack: "Vue, Pinia",
+    github: "https://github.com/MarinGr/chatbot-interface",
+    liveDemo: "https://maringr.github.io/chatbot-interface/",
+  },
+  {
+    id: uuidv4(),
     img: loanCalculatorImg,
     title: "Loan calculator",
     desc: "Loan calculator with real-time results update built with Vue and Vuex. Includes additional dependency vue-chart-3.",
@@ -35,6 +44,7 @@ export const projectsData = [
     github: "https://github.com/MarinGr/loan-calculator-vue",
     liveDemo: "https://maringr.github.io/loan-calculator-vue/",
   },
+
   {
     id: uuidv4(),
     img: cryptocurrencyAppImg,
