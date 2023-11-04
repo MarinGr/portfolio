@@ -1,7 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
 import foodShopImg from "../images/projectsImages/food-shop.png";
 import weatherAppImg from "../images/projectsImages/weather-app.png";
-import currencyConverterImg from "../images/projectsImages/currency-converter.png";
 import savingsGoalsImg from "../images/projectsImages/savings-goals.png";
 import cryptocurrencyAppImg from "../images/projectsImages/cryptocurrency-app.png";
 import loanCalculatorImg from "../images/projectsImages/loan-calculator.png";
@@ -62,15 +61,5 @@ export const projectsData = [
     stack: "React, Typescript, OpenWeather API",
     github: "https://github.com/MarinGr/weather-ts",
     liveDemo: "https://maringr.github.io/weather-ts/",
-  },
-
-  {
-    id: uuidv4(),
-    img: currencyConverterImg,
-    title: "Currency converter",
-    desc: "Currency converter built with Javascript. Includes integration with Exchange rates API.",
-    stack: "HTML, CSS, Javascript, Exchange rates API",
-    github: "https://github.com/MarinGr/currency-converter",
-    liveDemo: "https://maringr.github.io/currency-converter/",
   },
 ];
