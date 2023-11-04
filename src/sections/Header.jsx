@@ -10,8 +10,8 @@ export default function Header() {
 
   const navLinks = [
     { name: "About", to: "about", id: 1 },
-    { name: "Stack", to: "stack", id: 2 },
-    { name: "Projects", to: "projects", id: 3 },
+    { name: "Projects", to: "projects", id: 2 },
+    { name: "Stack", to: "stack", id: 3 },
     { name: "Contacts", to: "contacts", id: 4 },
   ];
 
