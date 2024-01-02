@@ -2,7 +2,6 @@ import { v4 as uuidv4 } from "uuid";
 import foodShopImg from "../images/projectsImages/food-shop.png";
 import weatherAppImg from "../images/projectsImages/weather-app.png";
 import savingsGoalsImg from "../images/projectsImages/savings-goals.png";
-import cryptocurrencyAppImg from "../images/projectsImages/cryptocurrency-app.png";
 import loanCalculatorImg from "../images/projectsImages/loan-calculator.png";
 import chatbotImg from "../images/projectsImages/chatbot-interface.png";
 
@@ -42,16 +41,6 @@ export const projectsData = [
     stack: "Vue, Vuex",
     github: "https://github.com/MarinGr/loan-calculator-vue",
     liveDemo: "https://maringr.github.io/loan-calculator-vue/",
-  },
-
-  {
-    id: uuidv4(),
-    img: cryptocurrencyAppImg,
-    title: "Cryptocurrency app",
-    desc: "Cryptocurrency app that provides data about current cryptocurrency prices. Built with React and React Router and includes integration with CoinStats API.",
-    stack: "React, React Router, Styled Components, CoinStats API",
-    github: "https://github.com/MarinGr/cryptocurrency-app",
-    liveDemo: "https://maringr.github.io/cryptocurrency-app/",
   },
   {
     id: uuidv4(),
